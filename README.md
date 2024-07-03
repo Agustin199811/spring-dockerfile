@@ -18,24 +18,24 @@ This project is currently in development and is being worked on for version 1.0.
 ## Installation and Setup
 
 1. Clone this repository to your local machine using the following command:
-git clone https://github.com/Agustin199811/spring-dockerfile.git
++ git clone https://github.com/Agustin199811/spring-dockerfile.git
 
 2. Import the project into your preferred IDE (e.g., IntelliJ IDEA or Eclipse) as a Maven project.
 
 3. Configure the MySQL database in your local environment. You can find instructions for configuring the database in the `application.properties` file.
 4. Configure the MySQL database:
--`Create a docker for mysql:`
+- `Create a docker for mysql:`
 docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=countries -p 3307:3306 -d mysql:8.0
--`Update the application.properties file with your MySQL configuration using docker:`
-spring.datasource.url=jdbc:mysql://host.docker.internal:3307/countries
-spring.datasource.username=root
-spring.datasource.password=root
+- `Update the application.properties file with your MySQL configuration using docker:`
++ spring.datasource.url=jdbc:mysql://host.docker.internal:3307/countries
++ spring.datasource.username=root
++ spring.datasource.password=root
 
 5. Run the Spring Boot application. The application will be available at `http://localhost:8080`.
--`Build the Docker image:`
-docker build -t spring-countries-api .
--`Run the Docker container:`
-docker run -p 8080:8080 spring-countries-api
+- `Build the Docker image`:
++ docker build -t spring-countries-api .
+- `Run the Docker container:`
++ docker run -p 8080:8080 spring-countries-api
 
 ## Usage
 
