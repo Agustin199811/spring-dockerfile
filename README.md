@@ -1,4 +1,4 @@
-# Spring Boot Countries API using Dockerfile
+# Spring Boot Countries API using Dockerfile and Docker Compose
 
 The Countries API is a RESTful service that allows managing information about countries. It provides endpoints to create, read, update, and delete country information. The API is developed using Spring Boot.
 
@@ -22,20 +22,12 @@ This project is currently in development and is being worked on for version 1.0.
 
 2. Import the project into your preferred IDE (e.g., IntelliJ IDEA or Eclipse) as a Maven project.
 
-3. Configure the MySQL database in your local environment. You can find instructions for configuring the database in the `application.properties` file.
-4. Configure the MySQL database:
-- `Create a docker for mysql:`
-    + docker run --name mysql_container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=countries -p 3307:3306 -d mysql:8.0
-- `Update the application.properties file with your MySQL configuration using docker:`
-    + spring.datasource.url=jdbc:mysql://host.docker.internal:3307/countries
-    + spring.datasource.username=root
-    + spring.datasource.password=root
-
-5. Run the Spring Boot application. The application will be available at `http://localhost:8080`.
-- `Build the Docker image`:
-    + docker build -t spring-countries-api .
-- `Run the Docker container:`
-    + docker run -p 8080:8080 spring-countries-api
+3. Run the Spring Boot application. The application will be available at `http://localhost:8080`.
+    - Navigate to the root directory of your project (where your docker-compose.yml file is located).
+        - `Build the Docker Compose`:
+            + docker-compose build
+        - `Run the Docker container:`
+            + docker-compose up
 
 ## Usage
 
