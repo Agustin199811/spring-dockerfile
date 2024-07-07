@@ -7,28 +7,9 @@ services:
       ports:
         - "8080:8080"
       environment:
-        SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/countries?createDatabaseIfNotExist=true&serverTimezone=UTC
+        SPRING_DATASOURCE_URL: jdbc:mysql://viaduct.proxy.rlwy.net:15286/railway?createDatabaseIfNotExist=true&serverTimezone=UTC
         SPRING_DATASOURCE_USERNAME: root
-        SPRING_DATASOURCE_PASSWORD: root
+        SPRING_DATASOURCE_PASSWORD: zlYTQXDrERWPGvKrioUzxZnZEOOHLqJr
       restart: always
-      depends_on:
-        db:
-          condition: service_healthy
 
-  db:
-    image: mysql:8.0
-    container_name: mysql-countries
-    ports:
-      - "3307:3306"
-    environment: 
-      MYSQL_DATABASE: countries
-      MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
-    restart: always
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h" ,"localhost"]
-      interval: 1m30s
-      timeout: 10s
-      retries: 10
-  
   
