@@ -39,6 +39,17 @@ The book REST API exposes the following endpoints:
 
 You can use tools such as Postman or cURL to send HTTP requests to these endpoints.
 
+## Deploy on Render
+
+Switch to the `deploy` branch to upload to the Render cloud provider
+
+To deploy the application on the Render cloud provider, follow these steps:
+
+1. **Switch to the `deploy` branch**:
+   ```bash
+   git checkout deploy
+
+
 ## Contribution
 
 If you wish to contribute to this project, please follow these steps:
