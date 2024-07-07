@@ -2,9 +2,9 @@ name: Deploy Rest Api Countries with Spring Boot
 
 on:
   push:
-    branches: [main]
+    branches: [deploy]
   pull_request:
-    branches: [main]
+    branches: [deploy]
     types: [opened, synchronize]
 
 jobs:
