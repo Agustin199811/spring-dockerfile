@@ -61,6 +61,8 @@ To deploy the application on the Render cloud provider, follow these steps:
 
 ![image](https://github.com/Agustin199811/spring-dockerfile/assets/91472854/3f78805b-f33a-4e69-bee9-cd595df5e49c)
 
+![image](https://github.com/Agustin199811/spring-dockerfile/assets/91472854/f81e89cb-09c5-43d4-b2b3-20f5680f24ed)
+
 
 ## Contribution
 
