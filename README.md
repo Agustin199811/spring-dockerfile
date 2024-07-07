@@ -50,6 +50,17 @@ To deploy the application on the Render cloud provider, follow these steps:
    ```bash
    git checkout deploy
 
+## Aws with ECR
+![image](https://github.com/Agustin199811/spring-dockerfile/assets/91472854/9158f8af-a6bf-476e-a06a-633715a1cc03)
+
+![image](https://github.com/Agustin199811/spring-dockerfile/assets/91472854/81318ed2-8930-45ab-a2c2-726cd9afbf57)
+
+![image](https://github.com/Agustin199811/spring-dockerfile/assets/91472854/3c3a5f30-bb32-42ea-97c9-a0eb837708c8)
+
+![image](https://github.com/Agustin199811/spring-dockerfile/assets/91472854/af4f2ac2-2115-43a6-9a56-fe12d57979aa)
+
+![image](https://github.com/Agustin199811/spring-dockerfile/assets/91472854/3f78805b-f33a-4e69-bee9-cd595df5e49c)
+
 
 ## Contribution
 
